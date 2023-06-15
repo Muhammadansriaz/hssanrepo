@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Go DropMe</title>
+    <style>
+        body {
+            margin: 50px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .MudAi {
+            font-size: 30;
+            font-weight: bold;
+            margin-left: 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            border-radius: 5px;
+            left: 10px;
+            width: 95%;
+            right: 1px;
+            height: 800px;
+            background-color: rgb(227, 225, 225);
+            box-sizing: border-box;
+            font-weight: 400;
+            padding: 20px;
+            font-size: 16px;
+            color: white;
+            transition: color 0.3s ease;
+            transform: scale(1.05);
+            background: #222;
+            border-radius: 6px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 25px 35px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            transition: all 0.3s ease;
+            position: relative;
+
+        }
+
+        .text {
+            margin: 5px;
+            margin-left: 220px;
+            font-size: 16px;
+            text-align: justify;
+        }
+        video {
+            position: absolute;
+            top: 20%;
+            left: 10px;
+            border-radius: 15px;
+            z-index: 1;
+            height: 40rem;
+            width: 19rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="video">
+            <video autoplay class="video-player" src="gdm_video.mp4" controls></video>
+        </div>
+
+        <div class="container">
+            <h1 class="MudAi">GoDropMe</h1>
+            <div class="text">GoDropMe, a cutting-edge platform designed to revolutionize the way packages are
+                delivered and rides are shared. With a user-friendly interface and advanced features, our app seamlessly
+                connects users, carriers, and passengers, streamlining the entire delivery process. Offering a
+                comprehensive range of services, including posting packages, scheduling future deliveries, booking
+                rideshares, real-time tracking, secure payments via Stripe, and in-app communication, our application
+                provides an all-in-one solution for efficient and convenient logistics management.</div>
+            <div class="text">Package Posting and Bidding: Users can effortlessly post packages for delivery, specifying
+                pick-up and drop-off locations, package details, and desired delivery time. Carriers can then bid on
+                these posts, providing competitive pricing and options for users to choose from.</div>
+            <div class="text">Future Scheduling: Carriers have the flexibility to schedule future deliveries, allowing
+                them to plan their routes and maximize efficiency. Users can browse carrier profiles and select the most
+                suitable option based on ratings, reviews, and delivery preferences.</div>
+            <div class="text">Rideshare Booking: Passengers can book rideshares offered by carriers, providing a
+                cost-effective and convenient transportation option. By leveraging the same platform, users can access
+                both package delivery and rideshare services, ensuring optimal resource utilization and reducing
+                transportation costs.</div>
+            <div class="text">Real-time Tracking: Our advanced tracking system enables users to monitor the progress of
+                their deliveries and rideshares in real-time. Users can view the location of their package or ride on an
+                interactive map, ensuring transparency and peace of mind throughout the journey.</div>
+            <div class="text">In-app Communication: Our application facilitates seamless communication between carriers
+                and users through a built-in chat feature. Users can ask questions, provide additional instructions, or
+                track their package's progress, fostering effective collaboration and ensuring a smooth delivery
+                experience.</div>
+            <div class="text">Secure Payments: We have integrated Stripe as our trusted payment gateway, ensuring secure
+                and hassle-free transactions. Users can make payments directly within the app, eliminating the need for
+                cash transactions and providing a seamless and transparent payment process.</div>
+        </div>
+
+</body>
+
+</html>
